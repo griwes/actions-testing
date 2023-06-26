@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: check what takes so much space on rootfs
         run: |
-          sudo find / | xargs du -sh | sort -h
+          sudo find / 2>/dev/null | xargs du -sh | sort -h
